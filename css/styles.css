@@ -1,0 +1,36 @@
+/* comparar con el styles.css de tony: tiene un @import además 
+del face-font, es solo para ilustrar o es necesario?*/
+
+@font-face {
+    font-family: miFuente;
+    src: url(/media/VarelaRound-Regular.ttf);
+} 
+
+* {
+    font-family: miFuente, Helvetica, sans-serif, serif;
+    background-color: #050505; /* ¿es buena práctic meter esto en el global?*/
+    color:#E6E7E8; 
+   /*  color:black;
+    background-color:white; */
+    /*background-image: url(/media/background_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;*/
+}
+
+:root {
+    --font-size:16px;
+    --navbar-height:82px;
+   
+
+}
+
+html {
+    scroll-behavior: smooth;
+  
+  }
+
+/*html, body{
+    width:100vw;
+    margin: 0px auto;
+     
+}*/

@@ -1,0 +1,86 @@
+@media all and (min-width: 768px) {
+  
+    /*bajar formulario, tal vez meter un h1: "Entra en Estrmix"*/
+    #flex-responsive-container{
+    display:flex;
+    flex-flow: row wrap;
+    gap:10px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+        }      
+
+    .flex-responsive-item{
+    flex: 1;
+    max-width: 630px;
+        }
+
+}
+
+
+
+header > #logo {
+display:block;
+margin: 0 auto 10px auto;
+/* height:auto;  */
+margin-bottom:30px;
+
+
+}
+
+
+form #flex-container {
+    
+display:flex;
+flex-flow: column;
+height: 60vh;
+
+border: solid 2px black;
+justify-content:space-evenly;
+align-items: center;
+
+} 
+
+
+.flex-item {
+flex-grow: 1;
+flex-basis: auto; /*probar con fit-content en caniuse*/
+
+}
+
+.flex-item label{
+    display:block;
+    
+}
+
+.flex-item label~input{
+
+    width: 320px;
+    height: 40px;
+    padding:5px;
+    margin: 0px auto;
+}
+
+.flex-item button {
+    width: 320px;
+    height: 50px;
+    font-variant: small-caps;
+}
+
+
+.flex-item > a {
+    display:inline-block;
+    margin:5px 35px;;
+    text-decoration: none
+}
+
+.flex-item > p {
+    text-align: center;
+}
+
+
+/* 
+footer{
+font-size:12px;
+text-align: center;
+} */
