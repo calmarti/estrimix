@@ -15,11 +15,18 @@
     max-width: 630px;
         }
 
+
+
+}
+
+* {
+    background-color: #050505;
+    color:#E6E7E8; 
 }
 
 
-
 header > #logo {
+background-color:white;
 display:block;
 margin: 0 auto 10px auto;
 /* height:auto;  */
@@ -79,8 +86,4 @@ flex-basis: auto; /*probar con fit-content en caniuse*/
 }
 
 
-/* 
-footer{
-font-size:12px;
-text-align: center;
-} */
+
