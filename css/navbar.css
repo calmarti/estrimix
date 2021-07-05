@@ -2,7 +2,7 @@
 
 .navbar{
     background-color:#E6E7E8;
-    height:var(--navbar-heigth);
+    height:var(--navbar-height);
     position:fixed;
     top:0px;
     left:0px;
@@ -145,25 +145,4 @@ CON :BEFORE O ALGÚN OTRO PSEUDO-ELEMENTO*/
 }
 
 
-       
-       
-
-  
-
-
    
-              /*HACER LA NAVBAR DE MOVIL CON EL CHECKBOX TRICK (CON O SIN BURGER) Y EL MENÚ DESPLEGABLE*/
-                /*IMPLEMENTAR EL NAVBAR FIXED DE PANTALLA GRANDE CON UN MEDIA QUERY*/
-                /*MIRAR LA EXPLICACIÓN DEL HOVER SOBRE LA TARJETA E IMPLEMENTARLA*/
-
-
-
-
-
-    
-}
-
-/* #navbar-list .navbar-item> a {
-    text-decoration:none;
-} */
-

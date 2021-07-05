@@ -19,21 +19,32 @@ width:100vw;
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
     grid-auto-rows: 240px;
-    gap: 15px;
+    gap: 10px;
    /*  grid-template-rows: repeat(1,minmax(240px,1fr)); */
     width:100vw;
     height:calc(100vh - var(--navbar-height)- var(--footer-heigth)); /*restarle alto del header (carrusel) y del footer*/
     
 }
 
-.card{
+
+/* Hover sobre la tarjeta muestra información sobre la película*/
+/*
+
+propiedades a tener en cuenta para el texto:
+-font-size:small;
+-font-weight:bold;
+-font-variant: small-caps
+*/
+
+
+.card {
     width: 360px; /*tamaño de la imagen*/
     position:relative;
     border:0px;
     margin:0px;
     padding:0px;
 }  
-}
+
 
 .card >.card-image{
     border:0px;
@@ -93,16 +104,46 @@ padding:0px;
 
 
 
+/*icono de favoritos interactivo, INCOMPLETO ...*/
+
+.label-favorite {
+position:relative;
+top:200px;
+left:300px;
+width:10px;
+height:10px;
+background-color:#E6E7E8;  
+/* display:none; */
+
+}
+
+.label-favorite ~ input {
+position:relative;
+top:200px;
+left:300px; 
+width:10px;
+height:10px;
+background-color:#E6E7E8;  
+/* display:none; */
+}
+
+
+.label-favorite::before {
+    content: "";
+    display:block;
+    background-image: url("../media/favorite_black.png");
+    background-repeat: no-repeat;
+    background-position: left bottom; 
+    z-index:100;
+}  
+
+
+
+
+
 /*display:none vs. visibility:hiden*/
 
-/*hover: al situar el ratón encima,
-se mostrará sobre la miniatura información adicional: título, calificación, año
-de publicación y sinopsis resumida
 
-propiedades a tener en cuenta para el texto:
--font-size:small;
--font-weight:bold;
--font-variant: small-caps*/
 
 
 

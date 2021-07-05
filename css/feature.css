@@ -1,16 +1,47 @@
-#feature-flex-container {
-display:flex;
-flex-flow: column wrap;
-}
-
-
-.feature-flex-card{
-flex:1; 
-
-} */
-
-body {
-
+body{
     background-color: #050505;
     color:#E6E7E8; 
+    
 }
+
+.feature-header{
+    
+    position:relative;
+    top: calc(var(--navbar-height) + 20px);   
+    width:50vw;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.feature-header > h1 {
+text-align: center;
+margin:0;
+padding:0;
+
+} 
+
+
+#main-feature{
+position:relative;
+top: calc(var(--navbar-height) + 20px + 20vh);
+left:0;
+width:100vw;
+
+}
+
+.container-feature {
+display:flex;
+flex-flow: column wrap;
+height:calc(100vh - var(--navbar-heigth)); /*falta restar el footer heigth*/
+
+}
+
+
+.item-feature {
+flex:1; 
+
+} 
+
+
+
