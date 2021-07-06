@@ -24,7 +24,7 @@ padding:0;
 
 #main-feature{
 position:relative;
-top: calc(var(--navbar-height) + 20px + 20vh);
+top: calc(var(--navbar-height) + 20px + 30px);
 left:0;
 width:100vw;
 
@@ -32,8 +32,8 @@ width:100vw;
 
 .container-feature {
 display:flex;
-flex-flow: column wrap;
-height:calc(100vh - var(--navbar-heigth)); /*falta restar el footer heigth*/
+flex-flow: column nowrap;
+height:calc(100vh - var(--navbar-height) - var(--footer-height)); /*falta restar el footer heigth*/
 
 }
 

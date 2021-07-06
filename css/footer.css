@@ -1,11 +1,11 @@
 
-footer{
-    display:block;
-/*     position:absolute;
-    top:120vh; */
-    left:50vw; /*calibrar*/
+footer {
+    position:relative;
+    bottom:0;
+    left:0; /*calibrar*/
     font-size:12px;
     text-align: center;
-    height: var(--footer-heigth);
+    height: var(--footer-height);
+    width:100%;
     }
 
