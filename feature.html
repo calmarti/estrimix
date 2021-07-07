@@ -5,112 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Laberinto del Fauno</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/feature.css">
-    <link rel="stylesheet" href="/css/footer.css">
 
-    <title>Estrimix</title>
 </head>
 
 <body>
 
-    <nav class="navbar">
+    <div class=grid-container>
+        <nav class="grid-item" id="feature-navbar">Navbar</nav>
 
-        <img id="logo" src="/media/logo_mini.png" alt="Logo de Estrimix">
-        <input id="responsive-icon" type="checkbox">
-        <label class="checkbox-label" for="responsive-icon"></label>
-
-        <ul class="navbar-list">
-
-            <li class="navbar-item"><a href="">Películas</a></li>
-            <li class="navbar-item"><a href="">Series</a></li>
-            <li class="navbar-item"><a href="">Estrenos</a></li>
-            <li class="navbar-item"><a href="">Favoritos</a></li>
-            <li class="navbar-item"><input type="search" placeholder="Buscar"></li>
-            <li class="navbar-item"><a href="">Salir</a></li>
-
-        </ul>
-
-    </nav>
-
-    <header class="feature-header">
-        <!-- TODO: DECIDIR CONTENIDO DEL 'HEADER': O EL TÍTULO CON UN POSTER CHULO DETRÁS O UN LA NAVBAR Y NADA MAS -->
-        <!--TODO: el layout de esto va con CSS Grid, usar span y otras técnicas si es necesario para demostrar conocimiento-->
-        <h1>El Laberinto del Fauno</h1>
-    </header>
-
-    <main id="main-feature">
-        <section>
-
-            <div class="container-feature">
+        <header class="grid-item" id="feature-header">
             
-                <article class="item-feature trailer-feature">
+            <img src="" alt="Poster de El Laberinto del Fauno">
+        </header>
 
-                    <video controls width="320px" poster="./media/pans_labyrinth_1280x1024.webp">
-                        <source src="" type="">
-                        </source>
-                        <source src="" type="">
-                        </source>
-                        <!--mismo video, distinto formato (.avi, etc.)-->
-                    </video>
+        <main id="feature-main">
+            
+            <h1>El Laberinto del Fauno</h1>
 
-                </article>
+            <section class="grid-item" id="feature-trailer">
 
-
-                <article class="item-feature info-feature">
-                    <ul>
-                        <li>
-                            <p>Sinopsis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit
-                                reprehenderit autem repudiandae eaque omnis tempore porro similique ad, tempora ducimus,
-                                eius aperiam magni ut hic placeat, aspernatur cum consequatur!</p>
-                        </li>
-                        <li>
-                            <p><strong>Cast: </strong>Ivana Baquero, Sergi López, Maribel Verdú, Doug Jones, Ariadna Gil
-                            </p>
-                        </li>
-                        <li>
-                            <p><strong>Año: </strong> 2006
-                        </li>
-                        <li><strong>Director: </strong>Guillermo del Toro</p>
-                        </li>
-                        <li>
-                            <p>121 min.</p>
-                        </li>
-                        <li>
-                            <p>España</p>
-                        </li>
-                        <!--icono bandera de España dentro del último li-->
-                    </ul>
-
-                </article>
-               
-                <h2>También te podría gustar...</h2>
-
-                <aside class="item-feature related-content">
-                    <article><img src="/media/peli_mini.png" alt=""></article>
-                    <article><img src="/media/peli_mini.png" alt=""></article>
-                    <article><img src="/media/peli_mini.png" alt=""></article>
-                    <article><img src="/media/peli_mini.png" alt=""></article>
-                </aside>
-
-            </div>
-
-        </section>
-    </main>
+               <video src=""></video>
 
 
+            </section>
 
-    <footer>
-        <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>YouTube</li>
-            <li>Twitch</li>
-        </ul>
-        <p>&#169;2021</p>
-    </footer>
+            <section class="grid-item" id="feature-info">
+                <ul>
+                    <li>
+                        <p>Sinopsis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit
+                            reprehenderit autem repudiandae eaque omnis tempore porro similique ad, tempora ducimus,
+                            eius aperiam magni ut hic placeat, aspernatur cum consequatur!</p>
+                    </li>
+                    <li>
+                        <p><strong>Cast: </strong>Ivana Baquero, Sergi López, Maribel Verdú, Doug Jones, Ariadna Gil
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Año: </strong> 2006
+                    </li>
+                    <li><strong>Director: </strong>Guillermo del Toro</p>
+                    </li>
+                    <li>
+                        <p>121 min.</p>
+                    </li>
+                    <li>
+                        <p>España</p>
+                    </li>
+                    <!--icono bandera de España dentro del último li-->
+                </ul>
+
+            </section>
+        </main>
+
+        <aside class="grid-item" id="feature-related">
+        <h2>Tal vez te gustaría ver...<h2>
+          <picture><img src="" alt=""></picture>
+          <picture><img src="" alt=""></picture>
+          <picture><img src="" alt=""></picture>
+        </aside>
+        
+        
+        <footer class="grid-item" id="feature-footer">Footer</footer>
+    
+
 
 </body>
 

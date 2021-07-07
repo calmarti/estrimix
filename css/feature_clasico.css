@@ -1,0 +1,47 @@
+body{
+    background-color: #050505;
+    color:#E6E7E8; 
+    
+}
+
+.feature-header{
+    
+    position:relative;
+    top: calc(var(--navbar-height) + 20px);   
+    width:50vw;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.feature-header > h1 {
+text-align: center;
+margin:0;
+padding:0;
+
+} 
+
+
+#main-feature{
+position:relative;
+top: calc(var(--navbar-height) + 20px + 30px);
+left:0;
+width:100vw;
+
+}
+
+.container-feature {
+display:flex;
+flex-flow: column nowrap;
+height:calc(100vh - var(--navbar-height) - var(--footer-height)); /*falta restar el footer heigth*/
+
+}
+
+
+.item-feature {
+flex:1; 
+
+} 
+
+
+
