@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(3,minmax(600px, 1fr));
+    /* grid-auto-rows: repeat(4,minmax(600px,1fr));  */
+    grid-auto-rows: 200px;
+
+    height:100vh;
+    /* width:100vw; */
+    grid-template-areas: 
+        "header header header" 
+        "trailer trailer info"       
+        "related-content related-content related-content"
+        "footer footer footer";
+
+}
+
+
+
+#header {
+    background-color: cyan;
+    /* width:100vw; */
+    /* height:20vh;   */
+    grid-area: header;
+    
+
+}
+
+#trailer {
+    background-color: lightgreen;
+ /*    width:50vw; 
+    height:40vh; */
+    grid-area: trailer;
+    grid-row: span 2;
+} 
+
+#info{
+    background-color:lightpink;
+    /* width:50vw;
+    height:40vh; */
+    grid-area:info;
+    grid-row: span 2;
+}  
+
+
+#related-content {
+background-color:lightseagreen;
+
+grid-area: related-content;
+grid-row:span 2;
+
+}
+
+#footer{
+background-color:darkred;
+grid-area: footer;
+grid-row: span 1;
+} 
+
+</style>
+
+
+
+
+<body>
+    
+<div class=grid-container>
+    <div class="grid-item" id="header">Header</div>
+    <div class="grid-item" id="trailer">Trailer</div>
+    <div class="grid-item" id="info">Info</div>
+    <div class="grid-item" id="related-content">Tal vez te gustaría ver...</div>
+    <div class="grid-item" id="footer">Footer</div>
+</div>
+
+</body>
+</html>

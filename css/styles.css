@@ -8,13 +8,8 @@ del face-font, es solo para ilustrar o es necesario?*/
 
 * {
     font-family: miFuente, Helvetica, sans-serif, serif;
-/*     background-color: #050505; /* ¿es buena práctic meter esto en el global?*/
-   /*  color:#E6E7E8;  */ */
-   /*  color:black;
-    background-color:white; */
-    /*background-image: url(/media/background_3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;*/
+
+
 }
 
 :root {

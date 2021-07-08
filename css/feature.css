@@ -1,7 +1,23 @@
+/*@font-face {
+    font-family: 'Bubblegum Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+}*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+ */
+
+ @font-face {
+    font-family: Fauno;
+    src: url(/media/BubblegumSans-Regular.ttf);
+} 
+
+/*QUEDÉ AQUI: EL FONT QUE MANDA ES EL VARELA, NO EL FAUNO, ¿POR QUE?*/
+
 body{
     
-     background-color:white;
-     color:black;
+    background-color: #050505; 
+    color:#E6E7E8;  
+  
  }
  
 .container {
@@ -24,24 +40,22 @@ body{
   
 } 
 
-#feature-navbar {
-    /* flex:auto; */
-}
-
 
 #feature-header {
     position:relative;
     left:0;
     top: var(--navbar-height);
-/*  background-image: url(/media/poster_1.jpg);
-    background-size: contain;
+    background-color: #050505; 
+    text-align: center;
+ /*    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; */
-    min-height: 209px;
+    background-position: top center; */
+    min-height: 50px;
     /* height: 200px; */
     flex-shrink:1;
     flex-basis:auto;
-    
+    font-family: Fauno, cursive;
+    font-size: 14px;
   
 
     /* width:100vw; */
@@ -73,19 +87,20 @@ line-height: 50px;
 min-height: 50px;
 font-weight: bold;
 font-size:22px;
-border: 1px solid black;
+border: 1px solid #E6E7E8; 
 display:inline-block;
 width: 300px; 
 text-align: center;
+font-family: Fauno, cursive, sans-serif;
 
 
 
 }
 
 #feature-trailer{
-    background-color: yellow;
+    background-color: white;
     flex:1; 
-    min-height: 200px;
+    min-height: 80px;
     
 }
 
@@ -128,10 +143,11 @@ background-color:red;
 
 
     .container {
+        
         display:grid;
-        /* grid-auto-flow:row; */
+        grid-auto-flow:row; 
         grid-template-columns: repeat(3, minmax(360px, 1fr));
-        grid-template-rows: var(--navbar-height) 1000px 700px 400px var(--navbar-height);
+        grid-template-rows: var(--navbar-height) 1000px 700px 400px var(--footer-height);
        
     
         grid-template-areas:
@@ -147,6 +163,7 @@ background-color:red;
             "footer footer footer";
 
         /* height: 100vh; */
+        
     }
     
     
@@ -167,9 +184,9 @@ background-color:red;
         background-image: url(/media/poster_1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center bottom;
+        background-position: center center;
        /*  background-color: cyan; */
-        /* width:100vw; */
+        width:100vw;
        /*  height:60vh; */   
         grid-area: header;
 
@@ -183,8 +200,8 @@ background-color:red;
         grid-area: main;
         /* height:80vh; */
     
-     /*    width:50vw; 
-       */
+        width:100vw;  
+       
     } 
 
 
@@ -207,8 +224,8 @@ background-color:red;
     display:flex;
     flex-flow:column wrap;
     grid-area: related-content;
-    /* width:50vw; 
-    height:30vh;  */
+    width:100vw; 
+   /*  height:30vh;  */ 
     
     }
     
@@ -216,7 +233,7 @@ background-color:red;
         background-color:red;
         grid-area: footer;
     
-        /* width:100vw; */
+        width:100vw; 
       /*   height:10vh;   */
     }
 }

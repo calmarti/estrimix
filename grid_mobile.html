@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   /*  grid-auto-rows: repeat(auto-fit,minmax(200px,1fr));  */
+   grid-template-rows: 1fr 2.5fr 2fr 2fr 0.5fr;
+    
+    height:100vh;
+    /* width:100vw; */
+
+}
+
+
+
+#header {
+    background-color: cyan;
+    /* width:100vw; */
+    /* height:20vh;   */
+}
+
+#trailer {
+    background-color: lightgreen;
+ /*    width:50vw; 
+    height:40vh; */
+} 
+
+#info{
+    background-color:lightpink;
+    /* width:50vw;
+    height:40vh; */
+}  
+
+
+#related-content {
+background-color:lightseagreen;
+/* width:50vw; 
+height:30vh;  */
+
+}
+
+#footer{
+    background-color:darkred;
+    /* width:100vw; */
+/*     height:10vh;   */
+} 
+
+</style>
+
+
+
+
+<body>
+    
+<div class=grid-container>
+    <div class="grid-item" id="header">Header</div>
+    <div class="grid-item" id="trailer">Trailer</div>
+    <div class="grid-item" id="info">Info</div>
+    <div class="grid-item" id="related-content">Tal vez te gustaría ver...</div>
+    <div class="grid-item" id="footer">Footer</div>
+</div>
+
+</body>
+</html>
