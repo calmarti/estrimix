@@ -10,47 +10,51 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/feature.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
 </head>
 
 <body>
 
-    <div class=grid-container>
+    <div class="container">
 
-        <nav class="navbar grid-item">
+        <nav  class="navbar item" id="feature-navbar">
 
             <img id="logo" src="/media/logo_mini.png" alt="Logo de Estrimix">
             <input id="responsive-icon" type="checkbox">
             <label class="checkbox-label" for="responsive-icon"></label>
-    
+
             <ul class="navbar-list">
-    
+
                 <li class="navbar-item"><a href="">Películas</a></li>
                 <li class="navbar-item"><a href="">Series</a></li>
                 <li class="navbar-item"><a href="">Estrenos</a></li>
                 <li class="navbar-item"><a href="">Favoritos</a></li>
                 <li class="navbar-item"><input type="search" placeholder="Buscar"></li>
                 <li class="navbar-item"><a href="">Salir</a></li>
-    
+
             </ul>
-    
+
         </nav>
 
 
 
-        <header class="grid-item" id="feature-header">
-            <h1>El Laberinto del Fauno</h1>
+        <header class="item" id="feature-header">
+          
            
         </header>
 
 
 
-        <main class="grid-item"  id="feature-main">
-            
-            <h1>El Laberinto del Fauno</h1>
+        <main class="item" id="feature-main" >
 
+            <div id="feature-title">
+               El Laberinto del Fauno
+            </div>
+            
             <div id="feature-trailer">
-               <video src=""></video>
+                Trailer
+                <video src=""></video>
             </div>
 
             <div id="feature-info">
@@ -61,7 +65,7 @@
                             eius aperiam magni ut hic placeat, aspernatur cum consequatur!</p>
                     </li>
                     <li>
-                        <p><strong>Cast: </strong>Ivana Baquero, Sergi López, Maribel Verdú, Doug Jones, Ariadna Gil
+                        <p><strong>Actores: </strong>Ivana Baquero, Sergi López, Maribel Verdú, Doug Jones, Ariadna Gil
                         </p>
                     </li>
                     <li>
@@ -82,24 +86,26 @@
         </main>
 
 
-        <aside class="grid-item" id="feature-related">
-        <h2>Tal vez te gustaría ver...<h2>
-          <picture><img src="" alt=""></picture>
-          <picture><img src="" alt=""></picture>
-          <picture><img src="" alt=""></picture>
+        <aside  class="item" id="feature-related">
+            <h2>Tal vez te gustaría ver...<h2>
+                    <picture><img src="" alt=""></picture>
+                    <picture><img src="" alt=""></picture>
+                    <picture><img src="" alt=""></picture>
         </aside>
-        
-        
-        
-        <footer class="grid-item" id="feature-footer"></footer>
-            <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>YouTube</li>
-                <li>Twitch</li>
-            </ul>
-            <p>&#169;2021</p>
+
+
+
+        <footer class="item" id="feature-footer">
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+            <li>Twitch</li>
+            <li>&#169;2021</li>
+        </ul>
         </footer>
+
+    </div>        
 
 </body>
 
