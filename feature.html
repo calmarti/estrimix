@@ -8,6 +8,7 @@
     <title>El Laberinto del Fauno</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/feature.css">
 
 </head>
@@ -15,25 +16,44 @@
 <body>
 
     <div class=grid-container>
-        <nav class="grid-item" id="feature-navbar">Navbar</nav>
+
+        <nav class="navbar grid-item">
+
+            <img id="logo" src="/media/logo_mini.png" alt="Logo de Estrimix">
+            <input id="responsive-icon" type="checkbox">
+            <label class="checkbox-label" for="responsive-icon"></label>
+    
+            <ul class="navbar-list">
+    
+                <li class="navbar-item"><a href="">Películas</a></li>
+                <li class="navbar-item"><a href="">Series</a></li>
+                <li class="navbar-item"><a href="">Estrenos</a></li>
+                <li class="navbar-item"><a href="">Favoritos</a></li>
+                <li class="navbar-item"><input type="search" placeholder="Buscar"></li>
+                <li class="navbar-item"><a href="">Salir</a></li>
+    
+            </ul>
+    
+        </nav>
+
+
 
         <header class="grid-item" id="feature-header">
-            
-            <img src="" alt="Poster de El Laberinto del Fauno">
+            <h1>El Laberinto del Fauno</h1>
+           
         </header>
 
-        <main id="feature-main">
+
+
+        <main class="grid-item"  id="feature-main">
             
             <h1>El Laberinto del Fauno</h1>
 
-            <section class="grid-item" id="feature-trailer">
-
+            <div id="feature-trailer">
                <video src=""></video>
+            </div>
 
-
-            </section>
-
-            <section class="grid-item" id="feature-info">
+            <div id="feature-info">
                 <ul>
                     <li>
                         <p>Sinopsis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit
@@ -58,8 +78,9 @@
                     <!--icono bandera de España dentro del último li-->
                 </ul>
 
-            </section>
+            </div>
         </main>
+
 
         <aside class="grid-item" id="feature-related">
         <h2>Tal vez te gustaría ver...<h2>
@@ -69,9 +90,16 @@
         </aside>
         
         
-        <footer class="grid-item" id="feature-footer">Footer</footer>
-    
-
+        
+        <footer class="grid-item" id="feature-footer"></footer>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>YouTube</li>
+                <li>Twitch</li>
+            </ul>
+            <p>&#169;2021</p>
+        </footer>
 
 </body>
 
