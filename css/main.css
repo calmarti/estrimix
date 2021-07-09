@@ -23,7 +23,7 @@ width:100vw;
    /*  grid-template-rows: repeat(1,minmax(240px,1fr)); */
     width:100vw;
     height:calc(100vh - var(--navbar-height)- var(--footer-heigth)); /*restarle alto del header (carrusel) y del footer*/
-    
+    /*OJO AQUI HAY UN ERROR EN EL CALC, SEPARAR EL SEGUNDO MENOS!!!!!!!!!!!!!!!!!!!*/
 }
 
 
