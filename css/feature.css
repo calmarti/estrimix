@@ -148,8 +148,8 @@ height:30vh;  */
 #feature-related-title {
     
     font-size: 20px;
-    padding-top:10px;
-    padding-left:24px;
+    padding:0 0 10px 10px;
+    text-align:center;
 }
 
 #feature-related p {
@@ -297,27 +297,29 @@ flex:1;
     flex-flow:row;
     gap:10px;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     width:100vw; 
-    margin-top:50px; 
-   
+    margin:150px 0; 
+    
 }
     
 
     #feature-related-title {
 
         position:relative;
-        top:1730px;
-        left:-520px;
+        top:1800px;
+        left: -755px;
         font-size:24px;
-        margin:30px 0; 
-    }
-
-
-    #feature-footer{
+       
         
-      
-       /*  width:100vw;  */
-      /*   height:10vh;   */
+                
+        
     }
+
+
+    .feature-footer{
+        
+        margin-top:300px;
+      
+      
 }
