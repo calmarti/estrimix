@@ -1,11 +1,24 @@
 
-footer {
-    position:relative;
+.footer > ul {
+    display:flex;
+    flex-flow:row wrap;
+    gap: 20px;
+   /*  position:relative;
     bottom:0;
-    left:0; /*calibrar*/
-    font-size:12px;
+    left:0; /*calibrar*/ 
+    font-size:14px;
     text-align: center;
     height: var(--footer-height);
     width:100%;
+    margin-bottom:-30px;
+    justify-content:space-evenly;
+    
     }
 
+
+
+.footer p {
+
+font-size:14px;
+text-align:center
+}
