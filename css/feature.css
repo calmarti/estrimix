@@ -160,7 +160,7 @@ height:30vh;  */
 #feature-footer{
 
 flex:1; 
-background-color:red;
+
    
 
     /* width:100vw; */
@@ -180,9 +180,9 @@ background-color:red;
         display:grid;
         grid-auto-flow:row; 
         grid-template-columns: repeat(3, minmax(360px, 1fr));
-        grid-template-rows: var(--navbar-height) 800px 800px 400px var(--footer-height);
+        grid-template-rows: var(--navbar-height) 800px 800px 400px ;
         gap:20px;
-    
+        width:100vw;
         grid-template-areas:
 
             "navbar navbar navbar" 
@@ -193,7 +193,7 @@ background-color:red;
       
             "related-content related-content related-content"
 
-            "footer footer footer";
+            
 
         /* height: 100vh; */
         
@@ -303,9 +303,6 @@ background-color:red;
    
 }
     
-    
-      
-    
 
     #feature-related-title {
 
@@ -318,10 +315,9 @@ background-color:red;
 
 
     #feature-footer{
-        background-color:red;
-        grid-area: footer;
-    
-        width:100vw; 
+        
+      
+       /*  width:100vw;  */
       /*   height:10vh;   */
     }
 }
