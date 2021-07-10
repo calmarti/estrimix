@@ -1,5 +1,4 @@
-/* comparar con el styles.css de tony: tiene un @import además 
-del face-font, es solo para ilustrar o es necesario?*/
+
 
 @font-face {
     font-family: miFuente;
@@ -19,16 +18,5 @@ del face-font, es solo para ilustrar o es necesario?*/
 
 }
 
-/*
-html {
-    scroll-behavior: smooth; 
-  
-  }
-*/
 
 
-/* body{
-    width:100vw;
-    margin: 0px auto;
-     
-}*/
