@@ -40,41 +40,37 @@
 
     <header>
 
-        <!--NO OLVIDAR METER AQUI UN H1-->
+       <h1>Estrenos</h1>
 
-        <!--     <div class="carrusel">
-            <div class="carrusel-item" id="item-1">1</div>
-            <div class="carrusel-item" id="item-2">2</div>
-            <div class="carrusel-item" id="item-3">3</div>
-            <div class="carrusel-item" id="item-4">4</div>
+   <div class="carrusel">
+            <div class="carrusel-item" id="item-1"></div>
+            <div class="carrusel-item" id="item-2"></div>
+            <div class="carrusel-item" id="item-3"></div>
+          
         </div>
 
-        <div>
-            <a href="#item-1">1</a>
-            <a href="#item-2">2</a>
-            <a href="#item-3">3</a>
-            <a href="#item-4">4</a>
-        </div> -->
-
+        <div class="carrusel-botones">
+            <a class="boton-1" href="#item-1">Películas</a>
+            <a class="boton-2" href="#item-2">Series</a>
+            <a class="boton-3" href="#item-3">Documentales</a>
+          
+        </div> 
     </header>
 
-<!--TODO:
-1) CARRUSEL (METER EL HEADER EN UN OUTER GRID?)
-2) REDUCIR MARGENES ENTRE COLUMNAS DEL GRID (USAR CSS GRID)
-3) CADA 2 O 3 FILAS INSERTAR UN TITULO ROLLO 'PELICULAS INFANTILES', 'SERIES ESPAÑOLAS', ETC. PENSAR BIEN COMO HACERLO
-4) ARREGLAR EL FOOTER - MOBIL Y LARGE SCREEN (¿METERLO EN UN OUTER GRID?)
--->
 
 
     <main id="main">
 
         <section>
-            <div id="grid-container">
+
+            <h1>Drama</h1>
+
+            <div class="grid-container">
 
                 <article class="card">
 
                     <div class="card-icon">
-                        <input class="checkbox-trick" id="checkbox-1" type="checkbox">
+                        <input checked class="checkbox-trick" id="checkbox-1" type="checkbox">
                         <label for="checkbox-1" class="label-favorite"></label>
                     </div>
 
@@ -182,6 +178,10 @@
                         </div>
                     </div>
                 </article>
+                
+                     
+
+              
 
                 <article class="card">
 
@@ -214,7 +214,7 @@
                 <article class="card">
 
                     <div class="card-icon">
-                        <input class="checkbox-trick" id="checkbox-6" type="checkbox">
+                        <input checked class="checkbox-trick" id="checkbox-6" type="checkbox">
                         <label for="checkbox-6" class="label-favorite"></label>
                     </div>
 
@@ -270,15 +270,18 @@
                 <article class="card">
 
                     <div class="card-icon">
-                        <input class="checkbox-trick" id="checkbox-8" type="checkbox">
+                        <input checked class="checkbox-trick" id="checkbox-8" type="checkbox">
                         <label for="checkbox-8" class="label-favorite"></label>
                     </div>
 
                     <div class="card-image">
                         <img src="/media/peli.png" alt="">
                     </div>
+            
+                   
 
-
+              
+            
                     <div class="card-text">
                         <div classs="container-card-text">
                             <div id="card-title">
@@ -294,6 +297,12 @@
                         </div>
                     </div>
                 </article>
+            </div>
+            
+            
+                <h1>Comedia</h1>
+
+            <div class="grid-container">
 
                 <article class="card">
 
@@ -382,7 +391,7 @@
                 <article class="card">
 
                     <div class="card-icon">
-                        <input class="checkbox-trick" id="checkbox-12" type="checkbox">
+                        <input checked class="checkbox-trick" id="checkbox-12" type="checkbox">
                         <label for="checkbox-12" class="label-favorite"></label>
                     </div>
 
@@ -410,7 +419,7 @@
                 <article class="card">
 
                     <div class="card-icon">
-                        <input class="checkbox-trick" id="checkbox-13" type="checkbox">
+                        <input checked class="checkbox-trick" id="checkbox-13" type="checkbox">
                         <label for="checkbox-13" class="label-favorite"></label>
                     </div>
 
@@ -494,7 +503,7 @@
                 <article class="card">
 
                     <div class="card-icon">
-                        <input class="checkbox-trick" id="checkbox-16" type="checkbox">
+                        <input checked class="checkbox-trick" id="checkbox-16" type="checkbox">
                         <label for="checkbox-16" class="label-favorite"></label>
                     </div>
 
@@ -519,24 +528,256 @@
                     </div>
                 </article>
 
-
-              
  
             </div>
+
+
+
+            <h1>Documentales</h1>
+
+            <div class="grid-container">
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        <input class="checkbox-trick" id="checkbox-17" type="checkbox">
+                        <label checked for="checkbox-17" class="label-favorite"></label>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="/media/peli.png" alt="">
+                    </div>
+
+
+                    <div class="card-text">
+                        <div classs="container-card-text">
+                            <div id="card-title">
+                                <h2>El Laberinto del Fauno</h2>
+                            </div>
+
+                            <div id="card-info">
+                                <p>Calificación: ⭐️⭐️⭐️⭐️<br />1993</p>
+                                <p>Ofelia conoce a un mítico fauno que afirma que la niña está destinada a convertirse en la princesa del inframundo. 
+                                    Pero primero, ella debe realizar tres riesgosas tareas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        <input checked class="checkbox-trick" id="checkbox-18" type="checkbox">
+                        <label for="checkbox-18" class="label-favorite"></label>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="/media/peli.png" alt="">
+                    </div>
+
+
+                    <div class="card-text">
+                        <div classs="container-card-text">
+                            <div id="card-title">
+                                <h2>El Laberinto del Fauno</h2>
+                            </div>
+
+                            <div id="card-info">
+                                <p>Calificación: ⭐️⭐️⭐️⭐️<br />1993</p>
+                                <p>Ofelia conoce a un mítico fauno que afirma que la niña está destinada a convertirse en la princesa del inframundo. 
+                                    Pero primero, ella debe realizar tres riesgosas tareas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        <input checked class="checkbox-trick" id="checkbox-19" type="checkbox">
+                        <label for="checkbox-19" class="label-favorite"></label>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="/media/peli.png" alt="">
+                    </div>
+
+
+                    <div class="card-text">
+                        <div classs="container-card-text">
+                            <div id="card-title">
+                                <h2>El Laberinto del Fauno</h2>
+                            </div>
+
+                            <div id="card-info">
+                                <p>Calificación: ⭐️⭐️⭐️⭐️<br />1993</p>
+                                <p>Ofelia conoce a un mítico fauno que afirma que la niña está destinada a convertirse en la princesa del inframundo. 
+                                    Pero primero, ella debe realizar tres riesgosas tareas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        <input class="checkbox-trick" id="checkbox-20" type="checkbox">
+                        <label for="checkbox-20" class="label-favorite"></label>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="/media/peli.png" alt="">
+                    </div>
+
+
+                    <div class="card-text">
+                        <div classs="container-card-text">
+                            <div id="card-title">
+                                <h2>El Laberinto del Fauno</h2>
+                            </div>
+
+                            <div id="card-info">
+                                <p>Calificación: ⭐️⭐️⭐️⭐️<br />1993</p>
+                                <p>Ofelia conoce a un mítico fauno que afirma que la niña está destinada a convertirse en la princesa del inframundo. 
+                                    Pero primero, ella debe realizar tres riesgosas tareas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        <input checked class="checkbox-trick" id="checkbox-21" type="checkbox">
+                        <label for="checkbox-21" class="label-favorite"></label>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="/media/peli.png" alt="">
+                    </div>
+
+
+                    <div class="card-text">
+                        <div classs="container-card-text">
+                            <div id="card-title">
+                                <h2>El Laberinto del Fauno</h2>
+                            </div>
+
+                            <div id="card-info">
+                                <p>Calificación: ⭐️⭐️⭐️⭐️<br />1993</p>
+                                <p>Ofelia conoce a un mítico fauno que afirma que la niña está destinada a convertirse en la princesa del inframundo. 
+                                    Pero primero, ella debe realizar tres riesgosas tareas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        <input class="checkbox-trick" id="checkbox-22" type="checkbox">
+                        <label for="checkbox-22" class="label-favorite"></label>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="/media/peli.png" alt="">
+                    </div>
+
+
+                    <div class="card-text">
+                        <div classs="container-card-text">
+                            <div id="card-title">
+                                <h2>El Laberinto del Fauno</h2>
+                            </div>
+
+                            <div id="card-info">
+                                <p>Calificación: ⭐️⭐️⭐️⭐️<br />1993</p>
+                                <p>Ofelia conoce a un mítico fauno que afirma que la niña está destinada a convertirse en la princesa del inframundo. 
+                                    Pero primero, ella debe realizar tres riesgosas tareas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        <input class="checkbox-trick" id="checkbox-23" type="checkbox">
+                        <label for="checkbox-23" class="label-favorite"></label>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="/media/peli.png" alt="">
+                    </div>
+
+
+                    <div class="card-text">
+                        <div classs="container-card-text">
+                            <div id="card-title">
+                                <h2>El Laberinto del Fauno</h2>
+                            </div>
+
+                            <div id="card-info">
+                                <p>Calificación: ⭐️⭐️⭐️⭐️<br />1993</p>
+                                <p>Ofelia conoce a un mítico fauno que afirma que la niña está destinada a convertirse en la princesa del inframundo. 
+                                    Pero primero, ella debe realizar tres riesgosas tareas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        <input class="checkbox-trick" id="checkbox-24" type="checkbox">
+                        <label for="checkbox-24" class="label-favorite"></label>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="/media/peli.png" alt="">
+                    </div>
+
+
+                    <div class="card-text">
+                        <div classs="container-card-text">
+                            <div id="card-title">
+                                <h2>El Laberinto del Fauno</h2>
+                            </div>
+
+                            <div id="card-info">
+                                <p>Calificación: ⭐️⭐️⭐️⭐️<br />1993</p>
+                                <p>Ofelia conoce a un mítico fauno que afirma que la niña está destinada a convertirse en la princesa del inframundo. 
+                                    Pero primero, ella debe realizar tres riesgosas tareas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
         </section>
     </main>
 
     <footer class="footer">
                 
+         
         <ul>
             
             <li>Acerca de Estrimix</li>
-            <li>Oportunidades de empleo</li>
-            <li>Términos de uso</li>
-            <li>Política de Privacidad</li>                              
-            <li>Preferencias de Cookies</li>
-            <li>Centro de Ayuda</li>
             <li>Preguntas frecuentes</li>
+            <li>Términos de uso</li>
+            <li>Privacidad</li>                              
+            <li>Cookies</li>
+            <li>Ayuda</li>
+            <li>Empleo</li>
             <li>Contacto</li>
          </ul>
 

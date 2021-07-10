@@ -1,31 +1,6 @@
 
-/*versión móvil aquí*/
-
-
-
-@media all and (min-width: 768px) {
-  
-    /*bajar formulario, tal vez meter un h1: "Entra en Estrmix"*/
-    #flex-responsive-container{
-    display:flex;
-    flex-flow: row wrap;
-    gap:10px;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-        }      
-
-    .flex-responsive-item{
-    flex: 1;
-    max-width: 630px;
-        }
-
-
-
-}
-
 * {
-    background-color: #050505;
+    background-color: hsl(0, 0%, 2%);
     color:#E6E7E8; 
 }
 
@@ -41,22 +16,21 @@ margin-bottom:30px;
 }
 
 
-form #flex-container {
-    
+form > #flex-form {
+ 
 display:flex;
 flex-flow: column;
-height: 60vh;
-
-border: solid 2px black;
-justify-content:space-evenly;
+justify-content:space-around;
 align-items: center;
+height: 70vh;
+
 
 } 
 
 
 .flex-item {
-flex-grow: 1;
-flex-basis: auto; /*probar con fit-content en caniuse*/
+ flex:1;
+
 
 }
 
@@ -65,7 +39,7 @@ flex-basis: auto; /*probar con fit-content en caniuse*/
     
 }
 
-.flex-item label~input{
+.flex-item label ~ input{
 
     width: 320px;
     height: 40px;
@@ -92,3 +66,31 @@ flex-basis: auto; /*probar con fit-content en caniuse*/
 
 
 
+@media all and (min-width: 768px) {
+  
+    
+    #flex-responsive-container {
+    display:flex;
+    flex-flow: row wrap;
+    height: 100vh; 
+    align-items: center;
+    justify-content: center;
+        }      
+
+    .flex-responsive-item{
+    flex: 1;
+    /* max-width: 630px; */
+    }
+
+    form > #flex-form {
+ 
+        display:flex;
+        flex-flow: column;
+        justify-content:space-around;
+        align-items: center;
+        height:40vh;
+                
+        
+        } 
+
+}
