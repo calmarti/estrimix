@@ -240,64 +240,59 @@ background-color:red;
 
     #feature-main {
         
-        display:flex;
-        flex-flow:row nowrap;
-        grid-area: main;
-        width:100vw;
-        gap:30px;
-        align-items: center;
-        justify-content:space-evenly;
-        border-bottom: 1px white solid;  
+      /*   display:flex;
+        flex-flow:row wrap; */
+        /* gap:20px; */
+         /* justify-content: space-evenly;
+        
+       align-items: center;  */
+       grid-area: main;
+       display:grid;
+       grid-template-columns: 750px repeat(auto-fit, 800px);
+       gap:30px;
+       width:100vw; 
+       border-bottom: 1px white solid;  
         
     } 
-
 
    
     .feature-trailer{
         
-        flex:1;
         
     }
     
     #feature-info {
-        flex:1;
-        background-image: url(/media/fauno_1.png);
-        background-position: bottom right;
+   
+        
+        background-image: url(/media/fauno_3.png);
+        background-position: right bottom;
         background-repeat:no-repeat;
         background-size: contain;
-
+       
         
-     
         
     }
 
-    #feature-info > ul > li > p {
+    #feature-info > ul  {
+    float:left;
+           
+    }
+
+    #feature-info > ul p {
+         
     position:relative;
-    top:-120px;  
-    left:-10px;
-  
-    margin-bottom:16px;
-    text-align:justify;
+    top:-50px;  
+    left:-120px;
+    padding:5px 0px;
    
-
-    
+   
     }
-/* 
-    #feature-info  img {
-    position:relative;
-    top:-0;
-    width:600px;
-    height:335px;
-    
-    
-    }
-     */
 
 
     
     #feature-related {
+    
     grid-area: related-content;
-    flex:1;
     display:flex;
     flex-flow:row;
     gap:10px;
@@ -305,7 +300,8 @@ background-color:red;
     align-items: center;
     width:100vw; 
     margin-top:50px; 
-    }
+   
+}
     
     
       
