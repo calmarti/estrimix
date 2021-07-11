@@ -94,9 +94,6 @@ padding:2px 5px;
 
 
 .card > .card-icon > .checkbox-trick {
-    /*      position:relative;
-         top: 5px;
-         left:325px;  */
       
          display:none;
          
@@ -116,7 +113,7 @@ padding:2px 5px;
     z-index:10; 
 
     content:"";    
-    background-image: url(/media/unfavorite.png);
+    background-image: url(/img/unfavorite.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -133,7 +130,7 @@ padding:2px 5px;
     position:absolute;
     z-index:10;
     content:"";
-    background-image: url(/media/favorite.png);
+    background-image: url(/img/favorite.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
