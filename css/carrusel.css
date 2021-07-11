@@ -12,7 +12,7 @@ font-variant:small-caps;
 
 .carrusel {
 
-margin-top:160px;
+margin-top:100px;
 width:100vw;
 height:50vh;
 
@@ -68,44 +68,70 @@ flex-shrink: 0;
 
 
 .carrusel-botones {
-
+    margin-top:60px;
     width:100vw;
-    height:10vh;
+    height:20vh;
     display: flex;
     flex-direction: row;
-    overflow-x:auto; 
-    scroll-behavior:smooth;
     justify-content: space-around;
-    text-align:center;
+   
   
 }
 .carrusel-botones > a{
     display:inline-block;
     text-decoration: none;
-    width: 30%;
-   
+    width: 20%;
+    height: 40%;
+    font-size: 1.5rem;
+    line-height: 4.6rem;  
+    text-align:center;
+    
 }
 
 .boton-1{
-background-color:#e7f2f8;
-color:#050505;
-font-size: 1.5rem;
-line-height: 3rem;
+background-color:#E6E7E8;
+color: #050505;
+
+
 
 
 }
 .boton-2{
-background-color:#b4aaa9;
-color:050505;
-font-size: 1.5rem;
-line-height: 3rem;
+background-color:#1e2640;
+color:#E6E7E8;;
+
 }
 
 .boton-3{
-background-color: #1e2640;
-color:#050505;
-font-size: 1.5rem;
-line-height: 3rem;
+background-color: #050505;
+color:#E6E7E8;
+border: #E6E7E8 solid 1px;
+
 }
 
+
+@media all and (max-width: 768px) {
+
+    .carrusel-botones {
+
+        width:100vw;
+        height:10vh;
+        display: flex;
+        flex-flow: column nowrap;
+        
+        
+        
+    }
+      
+    .carrusel-botones > a {
+    display:block;
+    text-decoration: none;
+    width: 100vw;
+    height:20vw;
+    font-size: 1rem;
+    text-align:center;
+      
+    }
+  
+}
 

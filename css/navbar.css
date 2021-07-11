@@ -1,19 +1,18 @@
 
-
 .navbar{
     background-color:#E6E7E8;
+    color: #050505; 
     height:var(--navbar-height);
     position:fixed;
     top:0px;
     left:0px;
-   /*  right:0px; */
     display:inline-block;
     width:100vw;
     z-index:100;
     
 
 }
-.navbar #logo {
+.navbar > #logo {
     background-color:#E6E7E8;
     width:80px;
     margin-left:40vw;
@@ -23,13 +22,13 @@
     }     
 
 
-.navbar-list{
+.navbar > .navbar-list{
     display:none;
         
 }  
 
 
-#checkbox {
+.navbar > #checkbox {
 
  display:none; 
 
@@ -49,13 +48,13 @@
 
       
 .navbar > .checkbox-label::before { 
-    content: "";
-   
-    width: 32px;
-    height: 3.2px;
     position: absolute;
     left: 8px;
     top: 8px;
+    width: 32px;
+    height: 3.2px;
+
+    content: ""; 
     background-color: darkgray;
     box-shadow: 0 7.2px 0 0 darkgray, 0 14.4px 0 0 darkgray;
       
@@ -65,27 +64,23 @@
 
          
 .navbar > #checkbox:checked ~ .navbar-list {
-    
+
+    height:calc(100vh - var(--navbar-height));
     margin:0;
     padding:0;
-    background-color:black; 
+    background-color:#050505; 
     display:flex;
     flex-flow:column nowrap;
     gap:20px;
     align-items:center;
     justify-content: space-evenly;
-    height:calc(100vh - var(--navbar-height));
-    /* opacity:.7; */
     
+        
 }
     
-.navbar-item {
-     flex-shrink: 1;
-     flex-basis: auto;
-        
-    } 
 
-.navbar-item > a {
+
+.navbar-list > .navbar-item > a {
     text-decoration:none;
     display:block;
     color:#E6E7E8;
@@ -95,61 +90,62 @@
 
 
 
+/*navbar en pantalla grande*/
 
-/*navbar large-size screen*/
 
 @media all and (min-width:768px) {
 
-.navbar #checkbox {
+    .navbar {
+          background-color:#E6E7E8;
+          display: inline-block;
+          position: fixed;
+          top:0px;
+          left:0px;
+          width:100%;    
+          height: var(--navbar-height);
+                
+          }
+
+    .navbar > #logo  {
+    
+            margin-left:20px;
+            display:block;
+            float:left;      
+        
+        }
+
+    .navbar > #checkbox {
     display:none;
-}
-
-
-    .navbar #logo  {
-        /* background-color:white; */
-        margin-left:20px;
-        display:block;
-        float:left;      
     
         }
 
-    .navbar {
-      /*   background-color:white; */
-        display: block;
-        position: fixed;
-        top:0px;
-        left:0px;
-        /* right:0px; */
-        width:100%;    
-        height: var(--navbar-height);
-              
-        }
+
         
-        .navbar .navbar-list  {
-            display:block;
-            height: calc(var(--navbar-height) - 1px);
-            padding: 0px;
-            margin: 0px;
-            float:right;
-            line-height:calc(var(--navbar-height) - 1px);
-            font-size: calc(var(--font-size));
+    .navbar > .navbar-list  {
+        display:block;
+        height: calc(var(--navbar-height) - 1px);
+        padding: 0px;
+        margin: 0px;
+        float:right;
+        line-height:calc(var(--navbar-height) - 1px);
+        font-size: var(--font-size);
         
-        }
+    }
         
-        .navbar .navbar-list > .navbar-item {
+    .navbar > .navbar-list > .navbar-item {
             display:inline-block;
             
         }
         
         
-        .navbar .navbar-list > .navbar-item > a {
+    .navbar > .navbar-list > .navbar-item > a {
                 text-decoration:none;
                 margin-right:25px;
                 padding:0px 4px;
                 color:#050505;
         }
         
-        .navbar .navbar-list  .navbar-item > input {
+    .navbar > .navbar-list > .navbar-item > input {
         width:130px;
         height: 35px;
         margin-top: 5px;
@@ -158,7 +154,7 @@
         
         }
 
-        .navbar img ~ label {
+    .navbar #logo ~ label {
             display:none;
 
 

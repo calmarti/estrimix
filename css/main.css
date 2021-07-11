@@ -1,4 +1,4 @@
-body{
+body {
    background-color: #050505; 
    color:#E6E7E8;  
   
@@ -27,14 +27,12 @@ width:100vw;
     gap: 10px;
    /*  grid-template-rows: repeat(1,minmax(240px,1fr)); */
     width:100vw;
-    height:calc(100vh - var(--navbar-height)- var(--footer-heigth)); /*restarle alto del header (carrusel) y del footer*/
+    height:calc(100vh - var(--navbar-height) - var(--footer-heigth)); /*restarle alto del header (carrusel) y del footer*/
     /*OJO AQUI HAY UN ERROR EN EL CALC, SEPARAR EL SEGUNDO MENOS!!!!!!!!!!!!!!!!!!!*/
 }
 
 
-/* Hover sobre la tarjeta muestra información sobre la película*/
 /*
-
 propiedades a tener en cuenta para el texto:
 -font-size:small;
 -font-weight:bold;
