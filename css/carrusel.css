@@ -36,7 +36,7 @@ flex-shrink: 0;
 
 
 .carrusel > #item-1 {
-    background-image: url(/media/carrusel_1.jpg);
+    background-image: url(/img/carrusel_1.jpg);
     background-repeat: no-repeat;
     background-image: cover;
     background-position: center;
@@ -44,7 +44,7 @@ flex-shrink: 0;
 }
 
 .carrusel > #item-2 {
-    background-image: url(/media/carrusel_2.jpg);
+    background-image: url(/img/carrusel_2.jpg);
     background-repeat: no-repeat;
     background-image: cover;
     background-position: center;
@@ -53,7 +53,7 @@ flex-shrink: 0;
 
 
 .carrusel > #item-3 {
-    background-image: url(/media/carrusel_3.jpg);
+    background-image: url(/img/carrusel_3.jpg);
     background-repeat: no-repeat;
     background-image: cover;
     background-position: center; 
