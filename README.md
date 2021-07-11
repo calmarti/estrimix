@@ -96,5 +96,10 @@ Flexbox horizontal
 
 ---
 
-Nota: Todos los ficheros CSS que tienen código *responsive* comienzan por la versión móvil y acaban con una media-query para la versión en pantalla
+Notas: 
+
+1. Todos los ficheros CSS que tienen código *responsive* comienzan por la versión móvil y acaban con una media-query para la versión en pantalla
 grande **a excepción de 'carrusel.css', donde ocurre justo lo contrario**. 
+
+2. El comportamiento del carrusel en firefox funciona como se espera; en chrome es menos fluido aunque, tras probar varias veces, debería 
+funcionar. 
