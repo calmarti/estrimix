@@ -1,6 +1,12 @@
+html {
+    scroll-behavior: smooth;
+} 
+
+
 body {
    background-color: #050505; 
-   color:#E6E7E8;  
+   color:#E6E7E8; 
+    
   
 }
 

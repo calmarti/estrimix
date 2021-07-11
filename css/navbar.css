@@ -96,6 +96,7 @@
 @media all and (min-width:768px) {
 
     .navbar {
+     
           background-color:#E6E7E8;
           display: inline-block;
           position: fixed;
