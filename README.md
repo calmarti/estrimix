@@ -87,6 +87,13 @@ Móvil y pantalla grande:
 
 Flexbox horizontal
 
+### Navegación 
+-El botón *continuar* en index.html enlaza a 'main.html'
+
+-El enlace *favoritos* en la barra de navegación en 'main.html' enlaza a la página de detalles (feature.html). 
+
+-El enlace *salir* en la barra de navegación enlaza con index.html.
+
 ---
 
 Nota: Todos los ficheros CSS que tienen código *responsive* comienzan por la versión móvil y acaban con una media-query para la versión en pantalla

@@ -53,6 +53,14 @@ height: 60vh;
     color: #050505;
 }
 
+.flex-item > button > #enlace {
+
+text-decoration:none;
+background-color:#E6E7E8;  
+color: #050505;
+
+}
+
 
 .flex-item > a {
     display:inline-block;
