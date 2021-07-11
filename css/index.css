@@ -20,7 +20,7 @@ form > #flex-form {
 display:flex;
 flex-flow: column;
 align-items: center;
-height: 50vh;
+height: 60vh;
 
 
 } 
@@ -74,7 +74,7 @@ height: 50vh;
     body > #flex-responsive-container {
     display:flex;
     flex-flow: row wrap;
-    height: 80vh; 
+    height: 85vh; 
     align-items: center;
     justify-content: space-around;
         }      
